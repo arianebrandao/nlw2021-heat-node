@@ -28,7 +28,7 @@ Nessa aula criamos o backend da aplicação utilizando NodeJS. Nesse projeto ire
 
 ## Front-end
 
-Você pode consumir essa aplicação usando [esse front-end para web (com ReactJS)](https://github.com/arianebrandao/nlw2021-heat-web) ou <del>esse para mobile (com React Native)</del> * em breve.
+Você pode consumir essa aplicação usando [esse front-end para web (em ReactJS)](https://github.com/arianebrandao/nlw2021-heat-web) ou esse [para mobile (em React Native)](https://github.com/arianebrandao/nlw2021-heat-reactnative).
 
 ## Tecnologias
 
@@ -38,6 +38,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Prisma ORM](https://www.prisma.io)
 - [Socket.IO](https://socket.io)
+- [Axios](https://axios-http.com)
 
 ## Como executar
 
