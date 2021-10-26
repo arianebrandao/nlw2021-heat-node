@@ -28,7 +28,7 @@ Nessa aula criamos o backend da aplicação utilizando NodeJS. Nesse projeto ire
 
 ## Front-end
 
-Você pode consumir essa aplicação usando [esse front-end para web (em ReactJS)](https://github.com/arianebrandao/nlw2021-heat-web) ou esse [para mobile (em React Native)](https://github.com/arianebrandao/nlw2021-heat-reactnative).
+Você pode consumir essa aplicação usando [esse front-end para web (em ReactJS)](https://github.com/arianebrandao/nlw2021-heat-web) ou [esse para mobile (em React Native)](https://github.com/arianebrandao/nlw2021-heat-reactnative).
 
 ## Tecnologias
 
