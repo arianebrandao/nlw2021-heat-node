@@ -14,12 +14,12 @@ Esse projeto foi desenvolvido durante a semana do evento [DO WHILE 2021](https:/
 
 ## App online para testar
 
-App online: [https://nlwheat-2021.vercel.app](https://nlwheat-2021.vercel.app/). Front-end hospedado no [Vercel](https://vercel.com/) e back-end hospedado no [Heroku](https://heroku.com).
+App online: [https://nlwheat-2021.vercel.app](https://nlwheat-2021.vercel.app/). Front-end hospedado no [Vercel](https://vercel.com/), back-end hospedado no [Render](https://render.com) e banco de dados hospedado no [Supabase](https://supabase.com/).
 
 ## Projeto
 
 O objetivo do evento é desenvolver uma aplicação completa, desde o back-end em Node.js, front-end para web em ReactJS,
-front-end mobile em React Native e para finalizar, um microserviço com Elixir. Este projeto consiste em um sistema para enviar e
+front-end mobile em React Native e para finalizar, um microsserviço com Elixir. Este projeto consiste em um sistema para enviar e
 visualizar mensagens em tempo real sobre o evento, para enviar uma mensagem o usuário deve estar logado com sua conta no Github.
 
 ## Layout
@@ -48,6 +48,24 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Clone o repositório
 - Instale as dependências com `yarn`
+- Renomeie o arquivo `.env.example` para `.env` e adicione as variáveis necessárias, o `JWT_SECRET` pode ser gerado aleatoriamente. Para rodar com um banco de dados em localhost, altere o arquivo `prisma/schema.prisma`:
+  
+  `datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}`
+
+para:
+
+`
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+`
+
+- Altere no arquivo `public/index.html`, o código: `const socket = io("https://nlw-heat.onrender.com/")` para o endereço onde 
+irá rodar esse backend, se for localhost, altere para: `const socket = io("http://localhost:4000")`
 - Importe as tabelas do SQLite com `yarn prisma migrate dev`
 - Inicie o servidor com `yarn dev`
 
